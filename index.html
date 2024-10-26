@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=device-width initial-scale=1.0>
+    <title>Mi carrito de compras></title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- CARRITO DE COMPRAS-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesone/6.0.0-beta3/css/all.mi.css">
+     
+    <!-- fontawesone ICONOS
+    ================================================== -->
+    <script src="https://kit.fontawesome.com/760a2ec322.js" crossorigin="anonymous"></script> 
+    
+    <link rel="stylesheet" href="https://font.googlepis.com/css2?family=roboto:wght@400;700&display=swap">
+    
+    
+</head>
+<body>
+    <!-- cabecera  -->
+    <header id="cabecera">
+        <img src="imagenes/logo.jpg"   width="250" height= "150" alt="LOGO DE ARoRos Dulces Sueños"> 
+    
+      </header> 
+    <div class="sticky-section">
+        <!-- es un encabezado fijo-->
+      <nav>
+      <ul class="nav-list">
+                <li> <a href="#inicio"> INICIO </a></li>
+                <li> <a href="#productos"> PRODUCTOS </a> </li>
+                <li> <a href="#contactos">  CONTACTOS </a> </li>
+                <li><a class="fas fa-shopping-cart"></a> </li>
+      </ul> 
+
+     </nav>    
+ </div>   
+<main>
+  <section id="inicio"> 
+       
+        <div class="video1">
+            <h1><p>Bordados personalizados </p></h1>
+            <video width="480" height="360"  controls muted >
+                <source src="video/videoDenise.mp4" type="video/mp4" >
+                <track  src="textos.vtt" kind="subtitles" srclang="es" label="Español" >
+            </video>
+                 <!-- no agrega subtitulos al video -->
+         </div>
+         <div class="video2">       
+              <video width="480" height="360" controls muted >
+                <source src="video/video.mp4" type="video/mp4" >
+                <track  src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+              </video> 
+          </div>    
+   </section>    
+   
+   <section id="productos">
+       <div class="producto">
+                <img src="imagenes/tazaCintas.jpeg"   alt="tazas DE ARoRos Dulces Sueños">
+      </div>
+      <div class="producto">
+                <img src="imagenes/mantaCrecimientoRosa.jpeg"   alt="LOGO DE ARo Ros Dulces Sueños"> 
+      </div>
+      <div class="producto">
+                <img src="imagenes/setCapucha.jpg"    alt="Setcapucha  ARo Ros Dulces Sueños"> 
+      </div>
+      <div class="producto">
+                <img src="imagenes/Souvenir.jpeg"    alt="Souvenir ARo Ros Dulces Sueños"> 
+      </div>
+   </section>
+    
+    
+    
+  </main>
+  <section class="Ubicacion">
+    <div>
+        <h1><p> Como llegar </p> </h1>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.5136077803922!2d-58.53550192514292!3d-34.66698466084075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc88cbf92965b%3A0x3e463e9a5feebf2b!2sCnel.%20Dorrego%20146%2C%20B1752%20Lomas%20del%20Mirador%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728708711549!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> 
+   </section> 
+    <section id="contactos">
+        <Form action="https://formspree.io/f/mwpkkkza" method="post"> 
+            <h1><p> Comunicate con nosotros</p></h1> 
+            <p class="ubica">NOMBRE  :<input type="text" name="nombre" id="nombre" placeholder="escribe tu nombre "> </p>
+            <p class="ubica">EMAIL   :<input type="email" name="email" id="email" placeholder="escribe tu mail "> </p>
+            <p class="ubica">CONSULTA:<textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="escribe tu consulta"></textarea> </p>
+            <p><button type="submit">ENVIAR</button></p>
+        </Form>
+    </section>
+
+        <footer id="pagina-footer">
+        
+         <!-- <div class="logo-footer">
+            <img src="imagenes/logo.jpg"   width="120" height= "70" alt="LOGO DE ARoRos para footer"> 
+          </div> -->
+          <NAV>    
+            <ul>
+                <li> Seguinos en nuestras redes <br></li>
+                <li><img src="imagenes/logo.jpg"   width="120" height= "70" alt="LOGO DE ARoRos para footer"> </li>
+                <li><a href="https://www.facebook.com/ARoRosDulcesSuenos" title="facebook" class="fa fa-facebook" with="50"> Facebook</a></li>
+                <li> <a href="https://www.instagram.com/a_ro_ros/" title="Instagram" class="fa fa-instagram" with="50"> Instagram</a></li>
+                <li>><a href="https://goo.gl/maps/jEJ5vknYaA83XsCD6" title="google" class="fa-google">Nuestra ubicación</a></li>
+                <li><a href="https://www.google.com" target="_blank">Google</a></li>
+
+
+                
+
+
+
+                <!--<li> <a href="https://www.flaticon.es/iconos-gratis/mapas-de-google" title="mapas de google iconos"></a> -->
+
+              
+            <!--<a href="https://www.google.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" width="30">
+                  <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+                </svg>
+              </a>
+              class="fa-brands fa-google"--!
+              <a href="https://www.google.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" width="50">
+                  <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+                </svg>
+              </a>-->
+            </ul>
+          </NAV>
+        <br>
+    <div class="finfooter">
+        <br>
+        <small> &copy; 2024 <b> A RO ROS DULCES SUEÑOS </b> Todos los Derechos Reservados.</small>
+        <br><br>
+    </div>
+</footer>
+</body>
+</html>

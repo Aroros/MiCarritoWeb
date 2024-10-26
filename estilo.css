@@ -1,0 +1,153 @@
+
+*{
+    margin:0 ;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color:grey;
+    font-size: 24px;
+    background-color: powderblue; 
+}
+h3{
+    color: grey;
+    font-size: 18px;
+    background-color: blueviolet;
+}
+#cabecera{
+    background-color: lightblue; 
+    font-size: 12;
+    font-family: Arial, Helvetica, sans-serif;
+    /*width: 100%;
+    height: 100%;*/
+    
+       
+}
+
+nav a{
+    text-decoration:none;
+    display:inline;  /*--- en la misma linea-------------*/
+}   
+
+/*#inicio{         ////inicio ///////////////
+    display:flex ; 
+    
+}*/
+
+.sticky-section {
+    position: sticky;
+    top: 0; /* Fija la sección en la parte superior */
+   background-color: #f1f1f1; 
+    padding: 5px;
+    font-size: 15px; /*tamaño de letra del menu sticky*/
+    z-index: 1000; /* Asegura que esté en la parte superior */
+}  
+.nav-list   {
+    text-align: right; 
+    justify-content: space-between;
+    padding: 20px;
+    background-color: powderblue; 
+    font-size: 12;
+    list-style: none; /*elimina los puntos de la lista*/
+    text-decoration: none; /*no aparece lo puntos de la lista*/
+}
+
+
+nav .nav-list  li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+   /*background-color:rgba(134, 48, 155, 0.3) ;*/
+}
+.video1{
+
+}
+.video2{
+
+}
+
+
+p.ubica{
+    padding: 10px;
+}
+
+.video {
+    color: white ;
+    background-color: lightblue; 
+}
+
+form{
+    color: grey;
+    background-color: lightblue;    
+    font-size: 12;
+    
+}
+.productos{
+    display: flex ;
+    flex-wrap:wrap;
+    justify-content: space-between;/*distribuir espacio entre productos*/
+    padding: 15px;
+}
+.producto{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;/*ajuste flexible (crece. encoge, tamaño) base 200px*/
+}
+
+div{
+    background-color: lightblue;  
+}
+#pagina-footer{
+       color: gray;
+     
+       background-color: black; 
+      
+    
+}
+a{ /*color de enlace*/
+    color: grey;
+    text-decoration:none;
+    }
+    
+ a:hover{
+    color: white;
+    }
+    
+ a:active{
+    color: cadetblue;
+ }
+
+ 
+ 
+ .finfooter{
+    background-color:black; 
+    text-align: center; 
+
+ }
+
+
+
+
+ footer nav li{
+   list-style:none;
+    text-align: center;
+ }
+ 
+
