@@ -22,51 +22,15 @@ h2{
   text-align: center;
   color: white;
   font-size: 2.5rem;
+  /*margin-top: 20px;*/
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);*/
 }
 #cabecera{
     background-color: lightblue; 
-    font-size: 12;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
          
 }
-
-/*-------------------------------------------*/
-/* Estilos del header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: lightblue; 
-   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  z-index: 1000; /*queda arriba*/
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-
-}
-
-header img {
-      width: 200px; /* Tamaño de la imagen de logo */
-      height: auto;
-      display: block;
-      margin-bottom: 10px;
-      padding: 5%;
-
-}
-
-
-
-
-
-
-
-/*----------------------------------------*/
 
 nav a{
     text-decoration:none;
@@ -81,8 +45,6 @@ nav a{
     padding: 5px;
     font-size: 15px; /*tamaño de letra del menu sticky*/
     z-index: 1000; /* Asegura que esté en la parte superior */
-    background-color: lightblue; 
-
 }  
 .nav-list   {
     text-align: right; 
@@ -101,25 +63,24 @@ nav .nav-list  li {
 
 #inicio{
   width:100vw;
-  height: 100vh; /*MITAD DE PANTALLA*/
+  height: 50vw;
+  display: flex;
   align-items:center;
   justify-content:center;
   background-image: url("imagenes/setcapucha.jpg");
-  Object-fit: cover; /* Para que la imagen se ajuste sin distorsionarse */
-  display: flex;
   background-size: cover;/* La imagen cubre todo el contenedor */
   background-position:center; /*Centrado*/
   
 }
-
 /*----  TEXTO para portada ****************/
-
-.texto-bienvenida {
-  color:rgb(78, 71, 71);
+.ppio-texto{
+  color:rgb(128, 118, 118);
   text-align: center;
   /*background-color: rgba(0, 0, 0, 0.3); /* Fondo semi-transparente para el texto */
   font-size:2em;
   font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .video source {
@@ -191,7 +152,7 @@ form{
 /* Estilo para cada imagen */
 .producto img {
   width: 80%; /* el ancho que ocupa la imagen dentro del contenedor */
-  height: 40%;/*el alto que ocupa la imagen dentro del contenedor*/
+  height: 40%;/*el alto que ocupa la imagen dentro del contenedor
   border: 3px solid #333; /* Borde alrededor de cada imagen */
   border-radius: 8px;
   margin-bottom: 10px; /* Espacio entre la imagen y el título */
@@ -230,12 +191,14 @@ div{
   background-color: lightblue;
   display: flex;
 }
-
+#pagina-footer{
+       color: gray;
+       background-color: black; 
       
     
-
+}
 a{ /*color de enlace*/
-    color: gray;
+    color: grey;
     text-decoration:none;
     }
     
@@ -251,10 +214,6 @@ a{ /*color de enlace*/
     color: aqua;
  }
  
- #pagina-footer{
-  color: gray;
-  background-color: black; 
- }
  .finfooter{
     background-color:black; 
     text-align: center; 
@@ -281,8 +240,8 @@ a{ /*color de enlace*/
 
     /* Cada columna dentro del footer */
     .footer-column {
-      flex: 1 1 30%; /* Flex-grow: ocupa espacio disponible, Flex-shrink: se reduce, Flex-basis: ancho mínimo */
-      min-width: 30%; /* Tamaño mínimo de cada columna */
+      flex: 1 1 200px; /* Flex-grow: ocupa espacio disponible, Flex-shrink: se reduce, Flex-basis: ancho mínimo */
+      min-width: 200px; /* Tamaño mínimo de cada columna */
     }
 
     /* Imagen y texto en la primera columna */
@@ -299,7 +258,18 @@ a{ /*color de enlace*/
       margin: 5px 0;
     }
 
-    
+    /* Enlaces dentro de las columnas */
+    .footer-column a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+    }
+
+    /* Enlace hover */
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
 
     /* Ajustes para pantallas pequeñas */
     @media (max-width: 768px) {
@@ -308,10 +278,3 @@ a{ /*color de enlace*/
         text-align: center;
       }
     }
-
-    /* Estilos responsive */
-@media (max-width: 768px) {
-  .menu ul {
-      display: none; /* Ocultar menú en pantallas pequeñas */
-  }
-}

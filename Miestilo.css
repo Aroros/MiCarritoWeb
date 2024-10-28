@@ -1,0 +1,59 @@
+.wrap{
+    width:100vw;
+    height: 50vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    /*background-image: url('/imagenes/toallita.jpeg');*/
+    background-image: url("imagenes/setcapucha.jpg");
+    background-size: cover;/* La imagen cubre todo el contenedor */
+    background-position:center; /*Centrado*/
+    color: white;
+}
+
+.wrap-text{
+    color:gray;
+    text-align: center;
+    font-size:2em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+    /* Estilo del contenedor */
+    #productos {
+      display: flex;
+      justify-content: space-between; /* Espacio uniforme entre las imágenes */
+      flex-wrap: wrap; /* Permite que las imágenes se muevan a una nueva línea en pantallas pequeñas */
+    }
+
+    /* Estilo para cada imagen */
+    .producto img {
+      width: 24%; /* Cada imagen ocupa el 24% del ancho del contenedor */
+      margin-bottom: 10px; /* Espacio entre filas de imágenes */
+    }
+
+    .producto :hover img { /*agranda imagen del flex*/
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        filter: brightness(1.2);
+      }
+
+
+
+    /* Estilo para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .producto img {
+        width: 48%; /* En pantallas pequeñas, dos imágenes por fila */
+      }
+    }
+
+    /* Estilo para pantallas muy pequeñas */
+    @media (max-width: 480px) {
+      .producto img {
+        width: 100%; /* En pantallas muy pequeñas, una imagen por fila */
+      }
+    }
+

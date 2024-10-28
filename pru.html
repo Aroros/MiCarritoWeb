@@ -1,0 +1,293 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Miestilo.css">
+</head>
+<body>
+ <main>
+    <div class="wrap"  >
+        <div class ="wrap-text">
+            <p>NOSOTROS</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a cupiditate dolorem sapiente sint nobis fugit minima praesentium dolore. Beatae natus explicabo tenetur tempora asperiores amet quidem nulla atque quas!</p>
+        </div>
+    </div>
+</main>   
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes con Flexbox</title>-->
+  <!--
+  <style>
+   
+    /* Estilo del contenedor */
+    .image-container {
+      display: flex;
+      justify-content: space-between; /* Espacio uniforme entre las imágenes */
+      flex-wrap: wrap; /* Permite que las imágenes se muevan a una nueva línea en pantallas pequeñas */
+    }
+
+    /* Estilo para cada imagen */
+    .image-container img {
+      width: 24%; /* Cada imagen ocupa el 24% del ancho del contenedor */
+      margin-bottom: 10px; /* Espacio entre filas de imágenes */
+    }
+
+    /* Estilo para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .image-container img {
+        width: 48%; /* En pantallas pequeñas, dos imágenes por fila */
+      }
+    }
+
+    /* Estilo para pantallas muy pequeñas */
+    @media (max-width: 480px) {
+      .image-container img {
+        width: 100%; /* En pantallas muy pequeñas, una imagen por fila */
+      }
+    }
+  </style>-->
+<!--</head>
+<body>
+<section id="productos"> 
+  <div class="producto">
+    <img src="./imagenes/infantiles.jpeg" alt="Imagen 1">
+    <img src="./imagenes/mantaCrecimientoRosa.jpeg" alt="Imagen 2">
+    <img src="./imagenes/mantaCrecimientoRosa.jpeg" alt="Imagen 3">
+    <img src="./imagenes/tazaCintas.jpeg" alt="Imagen 4">
+    <img src="./imagenes/infantiles.jpeg" alt="Imagen 5">
+    <img src="./imagenes/Souvenir.jpeg" alt="Imagen 6">
+    <img src="./imagenes/setCapucha.jpg" alt="Imagen 7">
+    <img src="./imagenes/tazaCintas.jpeg" alt="Imagen 8">
+     
+  </div>
+</section>
+</body>
+</html>-->
+
+
+
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Productos</title>
+  <style>
+    /* Fondo de pantalla */
+    body {
+      background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen de fondo */
+      background-size: cover;
+      background-attachment: fixed; /* Fija el fondo al desplazarse */
+      background-position: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo para el título principal */
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.5rem;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Estilo del contenedor principal */
+    .productos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 75%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    /* Estilo para cada producto */
+    .producto {
+      text-align: center;
+      width: 30%;
+      margin-bottom: 20px;
+    }
+
+    /* Estilo para cada imagen */
+    .producto img {
+      width: 75%; /* Ajusta la imagen al ancho del contenedor */
+      height: auto; /* Mantiene la relación de aspecto */
+      object-fit: cover; /* Recorta la imagen si es necesario, llenando el contenedor */
+      border: 3px solid #333;/* Borde específico de la imagen */
+      border-radius: 8px;/* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(228, 202, 202, 0.7); /* Sombra opcional para resaltar */
+    }
+
+  
+
+    /* Estilo para el título y el enlace */
+    .producto h2 a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    /* Cambio de color al pasar sobre el enlace */
+    .producto h2 a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Título principal -->
+  <h1>Mi Galería</h1>
+  
+  <!-- Contenedor de productos -->
+  <div class="productos">
+    <div class="producto">
+      <h2><a href="#">Producto 1</a></h2>
+      <img src="./imagenes/infantiles.jpeg" alt="Imagen del Producto 1">
+    </div>
+    <div class="producto">
+      <h2><a href="#">Producto 2</a></h2>
+      <img src="./imagenes/mantaCrecimientoRosa.jpeg" alt="Imagen del Producto 2">
+    </div>
+    <div class="producto">
+      <h2><a href="#">Producto 3</a></h2>
+      <img src="./imagenes/setCapucha.jpg" alt="del Producto 3">
+    </div>
+    <div class="producto">
+        <h2><a href="#">Producto 1</a></h2>
+        <img src="./imagenes/Souvenir.jpeg" alt="Imagen del Producto 1">
+      </div>
+      <div class="producto">
+        <h2><a href="#">Producto 2</a></h2>
+        <img src="./imagenes/tazaCintas.jpeg" alt="Imagen del Producto 2">
+      </div>
+      <div class="producto">
+        <h2><a href="#">Producto 3</a></h2>
+        <img src="./imagenes/setCapucha.jpg" alt="del Producto 3">
+      </div>
+  </div>
+  
+</body>
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Productos</title>
+  <style>
+    /* Fondo de pantalla */
+    body {
+      background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen de fondo */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo para el título principal */
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.5rem;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Estilo del contenedor principal */
+    .productos {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 75%; /* El contenedor ocupa el 75% del ancho de la pantalla */
+      margin: 0 auto;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    /* Estilo para cada producto */
+    .producto {
+      text-align: center; /* Centra el contenido dentro de cada producto */
+      width: 30%; /* Cada producto ocupa el 30% del ancho del contenedor principal */
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar cada producto */
+    }
+
+    /* Estilo para cada imagen */
+    .producto img {
+      width: 80%; /*  el ancho que ocupa la image dentro del contenedor */
+      height: 40%;/*el alto que ocupa la imagen dentro del contenedor
+      border: 3px solid #333; /* Borde alrededor de cada imagen */
+      border-radius: 8px;
+      margin-bottom: 10px; /* Espacio entre la imagen y el título */
+    }
+
+    /* Estilo para el título y el enlace */
+    .producto h2 a {
+      text-decoration: none; /* Quita subrayado del enlace */
+      color: #333; /* Color del texto */
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    /* Cambio de color al pasar sobre el enlace */
+    .producto h2 a:hover {
+      color: #007bff; /* Cambia a azul en hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Título principal -->
+  <h1>Mi Galería</h1>
+  
+  <h1>Mi Galería</h1>
+  
+  <!-- Contenedor de productos -->
+  <div class="productos">
+    <div class="producto">
+      <h2><a href="#">Producto 1</a></h2>
+      <img src="./imagenes/infantiles.jpeg" alt="Imagen del Producto 1">
+    </div>
+    <div class="producto">
+      <h2><a href="#">Producto 2</a></h2>
+      <img src="./imagenes/mantaCrecimientoRosa.jpeg" alt="Imagen del Producto 2">
+    </div>
+    <div class="producto">
+      <h2><a href="#">Producto 3</a></h2>
+      <img src="./imagenes/setCapucha.jpg" alt="del Producto 3">
+    </div>
+    <div class="producto">
+        <h2><a href="#">Producto 1</a></h2>
+        <img src="./imagenes/Souvenir.jpeg" alt="Imagen del Producto 1">
+      </div>
+      <div class="producto">
+        <h2><a href="#">Producto 2</a></h2>
+        <img src="./imagenes/tazaCintas.jpeg" alt="Imagen del Producto 2">
+      </div>
+      <div class="producto">
+        <h2><a href="#">Producto 3</a></h2>
+        <img src="./imagenes/setCapucha.jpg" alt="del Producto 3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis illum, similique sit architecto commodi modi asperiores sed sint provident eos eius!</p>
+      </div>
+  </div>
+  
+</body>
+</html>

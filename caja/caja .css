@@ -1,0 +1,23 @@
+ /******************* Estilos generales para el modelo de caja en todas las secciones */
+ header, main, section, footer, .sticky-section {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #333;
+    background-color: #f0f0f0; /* Gris claro para todas las secciones */
+  }
+  
+  /* Estilo específico para el header */
+  header {
+    background-color: lightblue;
+    border-color: #1e90ff; /* Borde de color azul para distinguirlo */
+  }
+  
+  /* Estilo específico para el footer */
+  footer {
+    background-color: black;
+    color: white; /* Texto en blanco para contraste en el fondo negro */
+    border-color: #333; /* Color de borde igual al fondo */
+  }
+  
+  
+  /**********************************************************/
